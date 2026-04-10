@@ -41,18 +41,8 @@ UTAH_APPELLATE_PATTERNS = [
     r'Custody\s+FFCL',
 ]
 
-FEDERAL_PATTERNS = [
-    # Federal transcript citations: Tr. at 123:4
-    r'Tr\.\s+(?:at\s+)?\d+:\d+',
-    # Federal findings
-    r'Finding[s]?\s+(?:of\s+Fact\s+)?(?:No\.)?\s*\d+',
-    # Joint Appendix
-    r'J\.?A\.?\s+\d+',
-]
-
 PRESET_PATTERNS = {
     'utah': UTAH_APPELLATE_PATTERNS,
-    'federal': FEDERAL_PATTERNS,
 }
 
 # ---------------------------------------------------------------------------
@@ -302,9 +292,6 @@ Examples:
 
   # Dry run — log what would be redacted without writing output
   python redact_brief.py brief.docx --dry-run
-
-  # Use federal citation patterns
-  python redact_brief.py brief.docx --preset federal
 
   # Use custom citation pattern
   python redact_brief.py brief.docx --pattern "Tr\\. at \\d+:\\d+" --pattern "Dkt\\. No\\."
