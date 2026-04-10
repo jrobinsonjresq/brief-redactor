@@ -1,10 +1,5 @@
 # brief-redactor
-
-A command-line tool for producing redacted public versions of appellate briefs in DOCX format.
-
-Identifies direct quotes (enclosed in quotation marks) within paragraphs that cite private source documents — transcripts, findings of fact, and similar trial court records — and replaces the quoted text with `x` characters on a strict 1:1 basis. All formatting, pagination, styles, and document structure are preserved exactly.
-
-Developed for Utah appellate practice. Tested against family law briefing drafted in Microsoft Word and OnlyOffice. Human developed with AI assistance.
+_Python script to redact private material from .docx legal documents. Finds and replaces quotes of non-public information with xxx characters. Non destructive of input file; outputs log of changes via sidecar file. (Human developed with AI assistance)_
 
 ---
 
@@ -12,9 +7,13 @@ Developed for Utah appellate practice. Tested against family law briefing drafte
 
 Utah Rule of Appellate Procedure 21(h) requires that any filing that contains non-public information must be accompanied by an identical public version with the sensitive information removed. 
 
-This tool automates the redaction of quotes, producing a public brief that is structurally and visually identical to the private version, except with only the quoted content replaced.
+This is a command-line tool for producing redacted public versions of appellate briefs in compliance with the rule.
 
-Obviously, it may not be suitable for your use case and no warranty is made regarding its fitness for any purpose. Users are advised to manually confirm sufficiency of redaction.
+It identifies direct quotes within paragraphs that cite private source documents — transcripts, findings of fact, &c — and replaces the quoted text with `x` characters on a strict 1:1 basis. All formatting, pagination, styles, and document structure are preserved.
+
+Developed for Utah appellate practice. Tested against family law briefing drafted in Microsoft Word and OnlyOffice.
+
+Obviously, this tool may not be suitable for your use case and no warranty is made regarding its fitness for any purpose. Users are advised to manually confirm sufficiency of redaction.
 
 ---
 
@@ -42,9 +41,6 @@ python redact_brief.py brief_PRIVATE.docx brief_PUBLIC.docx
 # Dry run — log what would be redacted without writing output
 python redact_brief.py brief_PRIVATE.docx --dry-run
 
-# Use federal citation patterns
-python redact_brief.py brief.docx --preset federal
-
 # Custom citation pattern (repeatable)
 python redact_brief.py brief.docx --pattern "Tr\. at \d+:\d+" --pattern "Dkt\. No\."
 ```
@@ -69,7 +65,7 @@ python redact_brief.py brief.docx --pattern "Tr\. at \d+:\d+" --pattern "Dkt\. N
 
 The script redacts alphabetic characters inside quotation marks (both straight `"` and smart `"` / `"`) in any paragraph that also contains a citation matching the active pattern set. Numbers, spaces, and punctuation inside quotes are preserved. The citation itself is never touched — only the quoted content.
 
-**Example (Utah appellate mode):**
+**Example:**
 
 Before:
 ```
