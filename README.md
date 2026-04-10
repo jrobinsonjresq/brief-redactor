@@ -171,4 +171,5 @@ MIT License. See `LICENSE`.
 
 [J. Robinson Esq. PLLC](https://jrobinsonesq.com)  
 Deep Research | Legal Writing | Appeals (licensed in Maine and Utah)
+
 [info@jrobinsonesq.com](mailto:info@jrobinsonesq.com)
