@@ -170,5 +170,5 @@ MIT License. See `LICENSE`.
 ## Author
 
 [J. Robinson Esq. PLLC](https://jrobinsonesq.com)  
-Appellate practice — Maine and Utah  
+Deep Research | Legal Writing | Appeals (licensed in Maine and Utah)
 [info@jrobinsonesq.com](mailto:info@jrobinsonesq.com)
