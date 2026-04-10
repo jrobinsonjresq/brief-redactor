@@ -4,7 +4,7 @@ A command-line tool for producing redacted public versions of appellate briefs i
 
 Identifies direct quotes (enclosed in quotation marks) within paragraphs that cite private source documents — transcripts, findings of fact, and similar trial court records — and replaces the quoted text with `x` characters on a strict 1:1 basis. All formatting, pagination, styles, and document structure are preserved exactly.
 
-Developed for appellate practice. Tested against briefs drafted in Microsoft Word and OnlyOffice, filed in the Utah Court of Appeals.
+Developed for appellate practice. Tested against briefs drafted in Microsoft Word and OnlyOffice, filed in the Utah Court of Appeals. Human developed with AI assistance.
 
 ---
 
