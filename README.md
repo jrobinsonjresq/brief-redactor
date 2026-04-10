@@ -80,11 +80,11 @@ Smith testified: "xxx xxxxx xxx xxx xxxx xxx xxxxxxx xxxxxxx xxx xxxxxxxxxxxx." 
 ### What is not redacted
 
 - Paraphrased or summarized content (not in quotation marks)
-- Quotes citing only public documents (e.g., the judgment, published case law)
+- Block quotes (not in quotation marks)
 - Case citations, statutes, and rules
 - Numerical figures, dollar amounts, dates
 
-Users should consider conducting a manual review for paraphrased material drawn from private records if a more conservative redaction is required.
+Users should consider conducting a manual review for paraphrased material and block quotes drawn from private records.
 
 ### Cross-run quote handling
 
